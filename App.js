@@ -2,9 +2,17 @@ import React from "react";
 import "./App.css";
 import * as XLSX from "xlsx";
 
+// source to study 
+// https://www.freecodecamp.org/news/how-to-build-a-todo-application-using-reactjs-and-firebase/
+
+
+
+// from here it is not necessary 
 function excelFileHandler(data) {
   
   data.forEach((el) => {
+    
+// rows that have to validate     
     const requireds = [
       "Invoice Numbers",
       "Pstng Date",
@@ -16,13 +24,14 @@ function excelFileHandler(data) {
       true
     );
    if(res){
-
+     
+//     if there is all the value to required then push the data to server.
    }
   });
   if (data);
 }
 
-// https://www.freecodecamp.org/news/how-to-build-a-todo-application-using-reactjs-and-firebase/
+
 
 export default function App() {
   const readExcel = (file) => {
